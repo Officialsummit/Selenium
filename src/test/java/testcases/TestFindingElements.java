@@ -30,7 +30,7 @@ public class TestFindingElements {
 		WebElement button = driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button/span"));
 		button.click();
 		
-		// waiting using thread.sleep(ms) --not recommended
+		// waiting using thread.sleep(ms) -- not recommended .we gonna use imlicit wait instead
 //		try {
 //			Thread.sleep(1000);
 //		}
