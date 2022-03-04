@@ -23,7 +23,7 @@ public class ExplicitWaitClass {
 			
 			
 			//implicit wait : Mostly for ``NoSuchElement`` 
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			
 			//Creating explicit wait instance : mostly for “ElementNotVisibleException” exception
 			WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(20));					
@@ -47,7 +47,8 @@ public class ExplicitWaitClass {
 			WebElement pass_btn = driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/div/button/span"));
 			pass_btn.click();
 			
-			System.out.println( driver.findElement(By.xpath("//*[@id=\"view_container\"]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[2]/div[2]")).getText());
+			System.out.println(explicitWait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"view_container\"]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[2]/div[2]"))).getText());
+			
 			
 			
 			
