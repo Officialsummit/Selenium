@@ -1,12 +1,12 @@
-/*Test case for reset password and using dynamically.
+/*Test for resetting password and using new password received for login.
  * 1. go to login page 
  * 2. click on forgot password
  * 3. click on reset password
  * 4. extract the new password from the reset text
- * 5. go back to logic page
- * 6. enter usernma and password
- * 7.click login 
- * 8. Check the login page message.
+ * 5. go back to login page
+ * 6. enter username and password
+ * 7. click login 
+ * 8. Check the login page message if logged in succesfully.
  */
 
 package testcases;
@@ -78,7 +78,7 @@ public class ForgotPasswordTest {
 	}
 
 	public static void sleepfor(long time) {
-		/**for handling synchronixation
+		/**for handling synchronization
 		 * @time : for how long thread should sleep
 		 *  */
 		try {
