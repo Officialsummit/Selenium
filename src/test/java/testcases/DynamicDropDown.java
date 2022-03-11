@@ -18,7 +18,7 @@ public class DynamicDropDown {
 		
 		//driver.findElement(By.xpath("(//a[@value='GOI'])[2]")).click();
 		
-		//Using parent block - get destination block
+		//specific parent-child traverse for specific element
 		
 		
 		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR']//a[@value='GOI']")).click();
