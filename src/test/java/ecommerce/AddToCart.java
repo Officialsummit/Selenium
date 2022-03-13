@@ -20,7 +20,7 @@ public class AddToCart {
 		
 		String productNames [] = {"Cucumber","Brocolli","Almonds","Onion"};
 		
-		//converting Product names array to collection - Array List
+		//converting Product names list to collection - Array List
 		ArrayList<String> productArrayList = new ArrayList<String>();
 		productArrayList.addAll(Arrays.asList(productNames));
 		
@@ -30,15 +30,8 @@ public class AddToCart {
 			
 			String[] product = productsList.get(i).getText().split("-");
 			String productNameTrimmed = product[0].trim();
-			
-			//System.out.println(productNameTrimmed);
-			
-			// Convert array to array list at runtime
-			// List<String> productArrayList = Arrays.asList(productNames);			
-			
+						
 			if(productArrayList.contains(productNameTrimmed)) {
-				//System.out.println(productArrayList.get(i));
-				//click on add to cart
 				driver.findElements(By.xpath("//div[@class='product-action']/button")).get(i).click();
 				
 								
