@@ -1,4 +1,4 @@
-package TestInterationsAjax;
+package testInteractions;
 
 import java.awt.Desktop.Action;
 

@@ -1,4 +1,4 @@
-package TestInterationsAjax;
+package testInteractions;
 
 import java.time.Duration;
 import java.util.Iterator;
